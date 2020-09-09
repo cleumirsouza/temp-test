@@ -1,0 +1,8 @@
+{
+    "bail": 1,
+    "verbose": true,
+    "transform": {
+        ".+\\.(css|styl|less|sass|scss)$": "jest-css-modules-transform",
+        "^.+\\.js$": "babel-jest"
+    }
+}
