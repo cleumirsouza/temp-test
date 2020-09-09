@@ -9,9 +9,14 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, './public/'),
-    inline: true,
+	hot: true,
     host: '0.0.0.0',
-    port: 8081,
+	port: 8081,
+	open: true,
+	watchOptions:{
+		poll: true,
+		ignored: "/node_modules/"
+	}
   },
   module: {
     rules: [

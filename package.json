@@ -6,7 +6,7 @@
     "start": "webpack --mode=development",
     "build": "webpack --mode=production",
     "dev": "webpack-dev-server",
-    "eject": "react-scripts eject"
+    "test": "jest"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -25,6 +25,7 @@
     "copy-webpack-plugin": "^6.1.0",
     "css-loader": "^4.3.0",
     "file-loader": "^6.1.0",
+    "jest": "^26.4.2",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
@@ -46,5 +47,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
   }
 }
