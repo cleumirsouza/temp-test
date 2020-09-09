@@ -8,7 +8,7 @@ function Home() {
       <header className="Home-header">
         <img src={logo} className="Home-logo" alt="logo" />
         <p>
-          Edit <code>src/Home.js</code> and save to reload.
+          Te amo s2
         </p>
         <a
           className="Home-link"
